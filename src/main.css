@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.product-card {
+  .swiper-pagination  {
+    @apply flex;
+    .swiper-pagination-bullet {
+      @apply w-1/4 h-1 rounded-sm bg-gray-300;
+    }
+  }
+
+  .more-info {
+    &::-webkit-scrollbar-track{
+      @apply w-1 bg-gray-100 mr-4 right-4 rounded-lg
+    }
+    &::-webkit-scrollbar{
+      @apply w-1 bg-gray-300 rounded-lg
+    }
+    &::-webkit-scrollbar-thumb{
+      @apply bg-primary-100 rounded-lg
+    }
+  }
+}
